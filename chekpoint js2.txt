@@ -1,0 +1,35 @@
+// Factorial: Write a function to calculate the factorial of a given number.
+var num = 5
+function facto(num) {
+  var fact = 1
+  for (var i = 1; i <= num; i++) {
+    fact = fact * i
+  }
+  return fact
+}
+
+console.log(facto(num))
+
+
+
+
+
+// Prime Number Check
+var num = 9
+function primenum(num) {
+  var compt = 0
+  for (var i = 1; i <= num; i++) {
+    if (num % i == 0) {
+      compt++
+    }
+  }
+  if (compt == 2) {
+    return 'prime'
+
+  }
+  else {
+    return 'not prime'
+  }
+}
+
+console.log(primenum(num))
